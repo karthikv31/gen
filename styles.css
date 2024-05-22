@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  max-width: 600px;
+  margin: auto;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+}
+
+label {
+  margin-top: 1em;
+  display: block;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  padding: 0.5em;
+  margin-top: 0.5em;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#invoice-output {
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 1em;
+  border: 2px solid #000;
+  border-radius: 1em;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1em;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+th,
+td {
+  padding: 0.5em;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+#company-logo {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto 1em auto;
+}
