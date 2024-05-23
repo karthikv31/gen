@@ -103,6 +103,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 </tbody>
             </table>
             <p><b>Make all checks payable to SNACKS AND CO.</b></p>
+            <p>or</p>
+            <p><b>Pay through Zelle: snacksandco24@gmail.com </b></p>
             <p>If you have any questions concerning this invoice, use the following contact information:</p>
             <p><b>NELSON  MOB: 6828120880</b></p>
             <p>THANK YOU FOR YOUR BUSINESS!</p>
