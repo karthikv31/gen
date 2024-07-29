@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,12 +9,14 @@
     <script src="https://cdn.jsdelivr.net/npm/pdfmake@latest/build/vfs_fonts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/html-to-pdfmake/browser.js"></script>
 </head>
-
 <body>
     <h1>Invoice Generator</h1>
     <form id="invoice-form">
         <label for="invoice-number">Invoice Number</label>
-        <input type="text" id="invoice-number" placeholder="Invoice Number" required readonly>
+        <input type="text" id="invoice-number" placeholder="Invoice Number">
+
+        <label for="invoice-date">Invoice Date</label>
+        <input type="date" id="invoice-date" placeholder="Invoice Date">
 
         <label for="customer-name">Customer Name</label>
         <input type="text" id="customer-name" placeholder="Customer Name" required>
@@ -56,5 +57,4 @@
     </div>
     <script src="script.js"></script>
 </body>
-
 </html>
