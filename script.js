@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
       totalAmount += salesTaxAmount;
     }
 
-    const invoiceNumber = nextInvoiceNumber++;
+    const invoiceNumber = document.getElementById("invoice-number").value || nextInvoiceNumber++;
     const currentDate = new Date().toLocaleDateString();
     localStorage.setItem("nextInvoiceNumber", nextInvoiceNumber);
 
@@ -103,8 +103,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 </tbody>
             </table>
             <p><b>Make all checks payable to SNACKS AND CO.</b></p>
-            <p>or</p>
-            <p><b>Pay through Zelle: snacksandco24@gmail.com </b></p>
+            <p> or</p>
+            <p>Pay through <b>Zelle: snacksandco24@gmail.com </b></p>
             <p>If you have any questions concerning this invoice, use the following contact information:</p>
             <p><b>NELSON  MOB: 6828120880</b></p>
             <p>THANK YOU FOR YOUR BUSINESS!</p>
@@ -113,6 +113,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("invoice-output").innerHTML = invoiceOutput;
     items = [];
   }
+
 
   function downloadPDF() {
     const invoiceOutput = document.getElementById("invoice-output").innerHTML;
@@ -138,9 +139,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     style: "header",
                   },
                   {
-                    text: `Invoice #${
-                      document.getElementById("invoice-number").value
-                    }`,
+                    text: `Invoice #${document.getElementById("invoice-number").value}`,
                     style: "subheader",
                   },
                   {
@@ -194,7 +193,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
       };
 
-      pdfMake.createPdf(dd).download(`invoice_${nextInvoiceNumber - 1}.pdf`);
+      pdfMake.createPdf(dd).download(`invoice_${document.getElementById("invoice-number").value}.pdf`);
     };
   }
 
